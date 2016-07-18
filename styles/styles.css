@@ -7,7 +7,7 @@ body {
   background-size: cover;
   background-position: center;
   color: black;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 #nav-bar{
@@ -38,8 +38,8 @@ body {
 }
 .pic-container {
 	/*padding-top: 5em;*/
-	width: 192px;
-	height: 223px;
+	width: 170px;
+	height: 212px;
 	/*padding-left: 1em;*/
 	/*margin: 0 auto;*/
 }
@@ -104,7 +104,9 @@ body {
  
 
 @media(min-width: 521px){
-
+	body{
+		font-size: 1.5em;
+	}
 	.nav-list, .skills {
 		font-family: 'Bad Script', cursive;
 	}
