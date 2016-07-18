@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
 	<title></title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
 	<link rel="stylesheet" type="text/css" href="./styles/styles.css">
+	<link href='https://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
+	<script src="https://code.jquery.com/jquery-2.2.3.js"></script>
 	
 	
 </head>
@@ -15,13 +18,14 @@
 	<hr>
 		<!-- nav bar - > contact, code, github, about me, resume -->
 		<ul id="nav-bar">
-			<li class="nav-list">Contact</li>
-			<li class="nav-list">About</li>
-			<li class="nav-list">Code</li>
-			<li class="nav-list">Resume</li>
+			<li class="nav-list">Email: rachelnjackson@yahoo.com</li> |
+			<li class="nav-list">About</li> |
+			<a href="https://github.com/Rachel91649"><li class="nav-list">Code</li></a> |
+			<a href="https://www.linkedin.com/in/rachelnjackson"><li class="nav-list">Linkedin</li></a>
 		</ul>
 	<hr>
 	<!-- pic -->
+	<br>	
 	<div id="container">
 		<div class="pic-container">
 			<img src="./styles/images/profile-pic.png" class="profile-pic">
@@ -29,9 +33,11 @@
 	</div>
 	<br>
 	<!-- about me blurb -->
-	<p id="blurb">..."about me and stuff"</p>
+	<br>
+	<p id="blurb">..."A non-profit leader turned fullstack developer!"</p>
 	<!-- Skills -->
-	<h3>Mad Skillz</h3>
+	<br>
+	<p id="skillz-title">Skills</p>
 	<div id="skillz-container">
 		<div class="skills">
 			<p class="skills-item">JavaScript</p>
@@ -53,20 +59,22 @@
 		</div>
 	</div>
 	
+	<p class="project-title">Projects</p>
 	<div id="project-container">
 		<div class="img-holder">
 			<img src="./styles/images/black-jack.png" class="screen-shot">
-				<p class="link"><a href="" class="project-link">21 Black Jack</a></p>
+				<p class="link"><a href="http://rachel91649.github.io/21-Blackjack/" class="project-link">21 Black Jack</a></p>
 		</div>
 		<div class="img-holder">
 			<img src="./styles/images/rest-roulette.png" class="screen-shot">
-				<p class="link"><a href="" class="project-link">Restaurant-Roulette</a></p>
+				<p class="link"><a href="https://my-restaurant-roulette.herokuapp.com/users" class="project-link">Restaurant-Roulette</a></p>
 		</div>
 		<div class="img-holder">
 			<img src="./styles/images/three-forks.png" class="screen-shot">
-				<p class="ink"><a href="" class="project-link">Three Forks Movies</a></p>
+				<p class="ink"><a href="http://three-forks.herokuapp.com" class="project-link">Three Forks Movies</a></p>
 		</div>
 	</div>
 </div>
+	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>

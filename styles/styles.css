@@ -1,12 +1,13 @@
 body {
 	background-color: #dcdcdc;
-	text-align: center;
+	/*text-align: center;*/
 	font-family: papyrus;
   /*background: url("./images/content-background.png");*/
-	background: url("./images/website-design-background-1.jpg");
+	background: url("./images/flowers.jpeg");
   background-size: cover;
   background-position: center;
-  color: white;
+  color: black;
+  font-size: 2em;
 }
 
 #nav-bar{
@@ -15,16 +16,20 @@ body {
 	margin: 0;
 	padding: 0;
 }
-
+#nav-bar {
+	/*font-size: 1em;*/
+}
 .nav-list{
 	display: inline-block;
-	border: 1px solid;
-	background-color: black;
-	color: white;
+	/*border: 1px solid;*/
+	/*background-color: black;*/
+	color: black;
+	font-size: 1em;
 
 } 
 /*nav list needs animations*/
-.nav-list:hover {
+.nav-list:hover, .project-link {
+	color: teal;
 
 }
 
@@ -32,10 +37,11 @@ body {
 	/*padding-left: 249px;*/
 }
 .pic-container {
+	/*padding-top: 5em;*/
 	width: 192px;
 	height: 223px;
-/*	padding-left: 4em;*/
-	margin: 0 auto;
+	/*padding-left: 1em;*/
+	/*margin: 0 auto;*/
 }
 
 .profile-pic {
@@ -43,19 +49,41 @@ body {
 	height: 100%;
 	border-radius: 30%;
 	border-style: solid;
-	border-color: white;
+	border-color: black;
 }
-
+#blurb {
+	font-weight: bold;
+}
+#skillz-title {
+	font-size: 2em;
+}
 #skillz-container {
-	border-style: solid 1px;
+	height: 15rem;
+	white-space: nowrap;
+	padding-bottom: 3rem;
+	overflow: auto;
+	overflow-x:hidden; 
+	overflow-y:scroll;
 }
 .skills {
-	display: inline-block;
+	height: 100px;
+	width: 100px;
+	display: block;
 	padding-left: 15px;
 	padding-right: 15px;
 }
-#projec-container {
 
+.project-title {
+	text-align: center;
+	font-size: 2em;
+}
+#project-container {
+	height: 20rem;
+	white-space: nowrap;
+	padding-bottom: 3rem;
+	overflow: auto;
+	overflow-x: scroll; 
+	overflow-y: hidden;
 }
 
 .img-holder {
@@ -71,5 +99,29 @@ body {
 }
 
 .project-link {
-	color: white;
+	color: black;
+}
+ 
+
+@media(min-width: 521px){
+
+	.nav-list, .skills {
+		font-family: 'Bad Script', cursive;
+	}
+	#project-container {
+		height: 25rem;
+		white-space: nowrap;
+		padding-bottom: 3rem;
+		overflow: auto;
+		overflow-x: scroll; 
+		overflow-y: hidden;
+	}
+
+	.img-holder {
+		width: 300px;
+		height: 200px;
+		display: inline-block;
+		padding: 6px;
+	}
+
 }
